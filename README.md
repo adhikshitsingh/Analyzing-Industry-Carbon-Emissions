@@ -15,3 +15,22 @@ This project explores global carbon emissions using a PostgreSQL database contai
 
 - PostgreSQL
 - SQL (Joins, Aggregations, Filtering, Casting)
+
+## Data
+
+This data is stored in a PostgreSQL database containing one table, product_emissions, which looks at PCFs by product as well as the stage of production that these emissions occurred. Here's a snapshot of what `product_emissions` contains in each column:
+
+| field	                        | data type   |
+| ------------------------------| ------------|
+| id	                        | VARCHAR     |  
+| year	                        | INT         |
+| roduct_name                   | VARCHAR     | 
+| company	                    | VARCHAR     |
+| country	                    | VARCHAR     |
+| industry_group                | VARCHAR     |
+| weight_kg	                    | NUMERIC     |
+| carbon_footprint_pcf          | NUMERIC     |
+| upstream_percent_total_pcf    | VARCHAR     |
+| operations_percent_total_pcf  | VARCHAR     |
+| downstream_percent_total_pcf  | VARCHAR     |
+
