@@ -16,7 +16,9 @@ This data is stored in a PostgreSQL database containing one table, product_emiss
 | operations_percent_total_pcf  | VARCHAR     |
 | downstream_percent_total_pcf  | VARCHAR     |
 
-## Finding Company Which Contributing Height Amount of Carbon Emission
+## Query
+
+### Finding Company Which Contributing Height Amount of Carbon Emission
 
 ```sql
 SELECT company, Round(SUM(carbon_footprint_pcf),2) as total_carbon_footprint,
